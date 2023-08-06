@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Wishing Website</title>
+  <!-- CSS styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('images/dumma2.jpg'); /* Replace 'your_background_image.jpg' with the path to your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #333333;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #241296;
+    }
+    .hidden {
+      display: none;
+    }
+    .button-container {
+      margin: 20px;
+    }
+    .birthday-button {
+      background-color: #0e0d0d8f;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .birthday-message {
+      margin: 30px;
+      font-size: 20px;
+      color: #555555;
+      line-height: 1.6;
+    }
+    .birthday-message p {
+      color: #271564;
+      font-weight: bold;
+    }
+    .birthday-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .birthday-image-container {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+      perspective: 1000px;
+    }
+    .birthday-image {
+      max-width: 500px;
+      max-height: 500px;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      transition: transform 0.6s;
+    }
+    .birthday-image:hover {
+      transform: rotateY(180deg);
+    }
+    .balloons {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #270f77;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <div class="balloons">&#127880;&#127881;&#127880; Happy Birthday! &#127878;&#127880;&#127878;</div>
+  <p class="birthday-message">
+     <span style="color: #581370;">DUMMMAAAAAA!!!!!!!!</span>,<br>
+     <span style="color: #5d1568;">Kushi ag irava dumma en en ankond idia adela fulfill agli kanava</span>
+   
+  </p>
+
+  <!-- Interactive button -->
+  <div class="button-container">
+    <button class="birthday-button" onclick="revealMessage()">open madava nayiiiiiiiiii</button>
+  </div>
+
+  <!-- Hidden birthday message -->
+  <div id="birthdayMessage" class="hidden birthday-message">
+    <p>Surprise! Here's a special birthday message just for you:</p>
+    <p>
+      Happy Birthday kanava esht sala elthidini alwa &#127881;&#127882;&#127880;12 gantege idhna kalsthini nodko nin sakath iro photo na idna akla status ge nodu akada anta<br>
+      thank you so much kanava irodike nan jothe inge nayiiiiiiiiiiii <br>
+      Nang party kodsbeku gift kodsbeku ninu nale maryangila aytaaaaaa.<br>
+      
+       &#127881;&#127880;&#127882; ee year full sakath ag irli kanava &#127881;&#127880;&#127882;
+    </p>
+  </div>
+
+  <div id="imageContainer" class="hidden">
+    <img src="images/dumma8.jpg" alt="Hidden Image">
+  </div>
+
+  
+
+  <!-- Birthday song -->
+  <audio id="birthdaySong" class="hidden" controls>
+    <source controls autoplay muted loop src="Song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+  <!-- Birthday images -->
+  <div class="birthday-images hidden">
+    <div class="birthday-image-container">
+      <img class="birthday-image" src="images/dumma7.jpg" alt="Birthday Image 1">
+    </div>
+    <div class="birthday-image-container">
+      <img class="birthday-image" src="images/dumma5.jpg" alt="Birthday Image 2">
+    </div>
+    <div class="birthday-image-container">
+      <img class="birthday-image" src="images/dumma11.jpg" alt="Birthday Image 3">
+    </div>
+    <div class="birthday-image-container">
+        <img class="birthday-image" src="images/img1.jpg" alt="Birthday Image 3">
+    </div>
+    <div class="birthday-image-container">
+        <img class="birthday-image" src="images/img2.jpg" alt="Birthday Image 3">
+    </div>
+    <div class="birthday-image-container">
+        <img class="birthday-image" src="images/img3.jpg" alt="Birthday Image 3">
+    </div>
+    <!-- Add more images here -->
+  </div>
+
+  <!-- More balloons -->
+  <div class="balloons">&#127880;&#127881;&#127882;&#127880;&#127881;</div>
+
+
+  <!-- JavaScript code -->
+  <script>
+    function revealMessage() {
+      var messageDiv = document.getElementById("birthdayMessage");
+      messageDiv.classList.remove("hidden");
+
+      var song = document.getElementById("birthdaySong");
+      song.classList.remove("hidden");
+      song.play();
+
+      var images = document.querySelector(".birthday-images");
+      images.classList.remove("hidden");
+
+      
+      
+      var imageContainer = document.getElementById("imageContainer");
+      imageContainer.classList.remove("hidden");
+
+      
+      var videoContainer = document.getElementById("videoContainer");
+      videoContainer.classList.remove("hidden");
+    
+    }
+  </script>
+</body>
+</html>
